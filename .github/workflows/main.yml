@@ -52,6 +52,6 @@ jobs:
           psql -h "$DB_HOST" -p "$DB_PORT" -d "$DB_NAME" -U "$DB_USER" -c
           "$SQL_COMMAND"
 
-          # Unset the PGPASSWORD after use for security reasons
+          # unset the PGPASSWORD after use for security reasons
 
           unset PGPASSWORD
