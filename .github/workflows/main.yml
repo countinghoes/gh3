@@ -33,10 +33,10 @@ jobs:
       - name: Update PostgreSQL Table
         env:
           DB_NAME: postgres
-          DB_HOST: “3.139.146.196”
-          DB_PORT: '5432'
-          DB_USER: '${{ env.POSTGRES_USER }}'
-          DB_PASS: '${{ env.POSTGRES_PASSWORD }}'
+          DB_HOST: "3.139.146.196"
+          DB_PORT: "5432"
+          DB_USER: ${{ env.POSTGRES_USER }}
+          DB_PASS: ${{ env.POSTGRES_PASSWORD }}
         run: >
          # The SQL command to update the table. You should replace this with
           your actual SQL command.
